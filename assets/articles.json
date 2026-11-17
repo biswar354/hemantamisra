@@ -4,7 +4,7 @@
         "title":  "Tribute to Hemanta Misra: the “Calcutta Group” Painter",
         "author":  "Maushumi Kandali",
         "credit":  "Art News \u0026 Views",
-        "image":  "/assets/images/calgrp-01.gif",
+        "image":  "./assets/images/calgrp-01.gif",
         "imageAlt":  "Archival photograph of the Calcutta Group",
         "excerpt":  "While we look back to the last two decades in this issue of the Art news \u0026 views to take stock of the things that had “happened” in the Indian art world – I take a quantum leap back to the forties. Those who were witness to the pulsating art scenario in Kol...",
         "paragraphs":  [
@@ -20,7 +20,7 @@
         "title":  "The Calcutta Group",
         "author":  "Sanjoy Mallik",
         "credit":  "Art \u0026 Deal · 2004",
-        "image":  "/assets/images/calgrp-02.gif",
+        "image":  "./assets/images/calgrp-02.gif",
         "imageAlt":  "Archival photograph associated with the Calcutta Group",
         "excerpt":  "“Man is supreme, there is none above him” — this was the guiding slogan when the Calcutta Group was formed in 1943.  Those were dark days for Bengal. Famine and pestilence were then stalking the land. The barbarity and heartlessness all around moved us, a f...",
         "paragraphs":  [
@@ -40,7 +40,7 @@
         "title":  "Echo of a Song",
         "author":  "Debashish Bezbaruah",
         "credit":  "The Assam Tribune · 2009",
-        "image":  "/assets/painting/Echo of a Song.jpg",
+        "image":  "./assets/painting/Echo of a Song.jpg",
         "imageAlt":  "Echo of a Song by Hemanta Misra",
         "excerpt":  "The humble waves of Dikhow merged with the Brahmaputra, and together they flowed into the sea, meandering through rugged terrains after a long, arduous journey. That was how HemantaMisra’s life too moved on, from his childhood at Sivasagar to the days of vi...",
         "paragraphs":  [
@@ -59,7 +59,7 @@
         "title":  "Hemanta Misra: The Surrealist Artist",
         "author":  "Pradosh Das Gupta",
         "credit":  "Roop-Lekha · 1971",
-        "image":  "/assets/images/calgrp-03.gif",
+        "image":  "./assets/images/calgrp-03.gif",
         "imageAlt":  "Archival image associated with Hemanta Misra",
         "excerpt":  "“…that evening is still fresh in my memory when I first met  HemantaMisra, the young artists from Assam, during one of our Calcutta Group shows about two decades ago. Hemanta with his unkempt hair, baggy trousers and thin-built body appeared to me more a re...",
         "paragraphs":  [
