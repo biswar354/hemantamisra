@@ -1,0 +1,49 @@
+<app-navbar></app-navbar>
+
+<main class="inner-page">
+	@if (article(); as post) {
+		<article class="article-detail">
+			<a class="article-back-link" routerLink="/articles">
+				<span aria-hidden="true">←</span> Back to the journal
+			</a>
+			<header class="article-detail-header">
+				<p class="inner-eyebrow">From the article archive</p>
+				<h1>{{ post.title }}</h1>
+				<p class="article-detail-meta">By {{ post.author }} <span>·</span> {{ post.credit }}</p>
+			</header>
+			<figure class="article-detail-image">
+				<img
+					[ngSrc]="post.image"
+					width="1200"
+					height="800"
+					[alt]="post.imageAlt"
+					priority
+				/>
+			</figure>
+			<div class="article-detail-copy">
+				@for (paragraph of post.paragraphs; track $index) {
+					<p>{{ paragraph }}</p>
+				}
+			</div>
+			<footer class="article-detail-footer">
+				<p>{{ post.source }}</p>
+				<a class="article-back-link" routerLink="/articles">
+					<span aria-hidden="true">←</span> More stories from the journal
+				</a>
+			</footer>
+		</article>
+	} @else if (archiveError(); as error) {
+		<section class="article-not-found" role="alert">
+			<p class="inner-eyebrow">The journal</p>
+			<h1>Article <em>unavailable.</em></h1>
+			<p class="inner-deck">{{ error }}</p>
+			<a class="article-back-link" routerLink="/articles">
+				<span aria-hidden="true">←</span> Return to the journal
+			</a>
+		</section>
+	} @else if (loading()) {
+		<p class="article-loading" role="status">Loading article…</p>
+	} @else {
+		<p class="article-loading" role="status">Article not found.</p>
+	}
+</main>

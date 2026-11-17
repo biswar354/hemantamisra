@@ -1,0 +1,161 @@
+<app-navbar></app-navbar>
+
+<main class="tribute-page">
+	@if (catalogError(); as error) {
+		<p class="gallery-source-note" role="alert">{{ error }}</p>
+	}
+	<section class="hero" id="home" aria-labelledby="hero-title">
+		<div class="hero-copy">
+			<p class="eyebrow"><span></span> Assam, India <span class="eyebrow-divider">/</span> 1917—2009</p>
+			<h1 id="hero-title">Hemanta<br /><em>Misra</em></h1>
+			<p class="hero-intro">A life observed in colour.</p>
+			<p class="hero-description">
+				Remembering the artist, painter and author whose work brought the landscapes and
+				spirit of Assam to canvas.
+			</p>
+			<a class="text-link" href="#paintings">
+				<span>Explore the collection</span>
+				<span class="link-arrow" aria-hidden="true">↘</span>
+			</a>
+		</div>
+
+		<figure class="hero-art">
+			@if (catalog(); as images) {
+				<img [ngSrc]="images.featured.hero" width="327" height="276" alt="Hemanta Misra painting at his Calcutta studio" priority />
+			}
+		</figure>
+
+		<div class="hero-note" aria-hidden="true">
+			<span>AN ARTIST'S LEGACY</span>
+			<span class="hero-note-line"></span>
+			<span>1917 — 2009</span>
+		</div>
+	</section>
+
+	<section class="collection section-wrap" id="paintings" aria-labelledby="collection-title">
+		<div class="section-heading">
+			<div>
+				<p class="eyebrow"><span></span> A glimpse of the archive</p>
+				<h2 id="collection-title">Collected <em>moments</em></h2>
+			</div>
+			<p class="section-note">Land, memory, and the quiet poetry between them.</p>
+		</div>
+
+		<div class="artwork-grid">
+			<figure class="artwork artwork-tall">
+				<div class="artwork-image">
+					@if (catalog(); as images) {
+						<img [ngSrc]="images.featured.collection[0].src" width="640" height="560" [alt]="images.featured.collection[0].title + ' by Hemanta Misra'" />
+					}
+					<span class="image-number">01</span>
+				</div>
+				<figcaption>
+					@if (catalog(); as images) {
+						<span>{{ images.featured.collection[0].title }}</span>
+					}
+					<span>Painting</span>
+				</figcaption>
+			</figure>
+			<figure class="artwork artwork-offset">
+				<div class="artwork-image">
+					@if (catalog(); as images) {
+						<img [ngSrc]="images.featured.collection[1].src" width="640" height="560" [alt]="images.featured.collection[1].title + ' by Hemanta Misra'" />
+					}
+					<span class="image-number">02</span>
+				</div>
+				<figcaption>
+					@if (catalog(); as images) {
+						<span>{{ images.featured.collection[1].title }}</span>
+					}
+					<span>Painting</span>
+				</figcaption>
+			</figure>
+			<figure class="artwork artwork-small">
+				<div class="artwork-image">
+					@if (catalog(); as images) {
+						<img [ngSrc]="images.featured.collection[2].src" width="640" height="560" [alt]="images.featured.collection[2].title + ' by Hemanta Misra'" />
+					}
+					<span class="image-number">03</span>
+				</div>
+				<figcaption>
+					@if (catalog(); as images) {
+						<span>{{ images.featured.collection[2].title }}</span>
+					}
+					<span>Painting</span>
+				</figcaption>
+			</figure>
+		</div>
+	</section>
+
+	<section class="artist-note" id="about" aria-labelledby="artist-title">
+		<div class="artist-note-inner">
+			<p class="eyebrow"><span></span> The artist</p>
+			<div class="artist-note-copy">
+				<h2 id="artist-title">A life shaped by<br /><em>place &amp; perspective.</em></h2>
+				<div>
+					<p>
+						Born in Sivasagar, Assam, Hemanta Misra studied in Guwahati and Shillong.
+						An artist, painter and author, he carried a keen eye for the world around
+						him into a body of work that continues to speak.
+					</p>
+					<a class="text-link" routerLink="/about">
+						<span>Read his story</span>
+						<span class="link-arrow" aria-hidden="true">↗</span>
+					</a>
+				</div>
+			</div>
+			<div class="artist-years"><span>1917</span><span></span><span>2009</span></div>
+		</div>
+	</section>
+
+	<section class="reviews section-wrap" id="articles" aria-labelledby="reviews-title">
+		<div class="section-heading">
+			<div>
+				<p class="eyebrow"><span></span> From the archive</p>
+				<h2 id="reviews-title">In the <em>press</em></h2>
+			</div>
+			<p class="section-note">Words that travelled alongside the work.</p>
+		</div>
+		<div class="review-grid">
+			<article class="review-card">
+				<div class="review-art">
+					@if (catalog(); as images) {
+						<img [ngSrc]="images.featured.echo" width="640" height="560" alt="Echo of a Song by Hemanta Misra" />
+					}
+					<span>01 / 02</span>
+				</div>
+				<div class="review-copy">
+					<h3>Echo of a Song</h3>
+					<blockquote>
+						“The mood is intensely poetic and refined ... with its lovely shades of blue
+						and a breeze of warm colours.”
+					</blockquote>
+					<p class="review-credit">The Statesman, Calcutta <span>—</span> 13 March 1969</p>
+				</div>
+			</article>
+			<article class="review-card review-card-reverse">
+				<div class="review-art">
+					@if (catalog(); as images) {
+						<img [ngSrc]="images.featured.harvest" width="640" height="560" alt="The Harvest by Hemanta Misra" />
+					}
+					<span>02 / 02</span>
+				</div>
+				<div class="review-copy">
+					<h3>The Harvest</h3>
+					<blockquote>
+						“Mr Misra’s pictures are alive and vital. He has a keen eye for the subject
+						allied to a vigorous ... technique.”
+					</blockquote>
+					<p class="review-credit">The Statesman, Calcutta <span>—</span> 30 November 1952</p>
+				</div>
+			</article>
+		</div>
+	</section>
+
+	<footer class="site-footer" id="contact">
+		<a class="footer-mark" href="#home">Hemanta <em>Misra</em></a>
+		<p>A tribute to an artist and his enduring legacy.</p>
+		<a class="footer-contact" href="mailto:udayon.misra@gmail.com">Get in touch <span>↗</span></a>
+		<span class="footer-copyright">© Hemanta Misra</span>
+	</footer>
+</main>

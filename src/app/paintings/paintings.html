@@ -1,0 +1,90 @@
+<app-navbar></app-navbar>
+
+<main class="inner-page">
+	<section class="inner-hero inner-hero-compact">
+		<p class="inner-eyebrow">The collection <span>—</span> Paintings &amp; sketches</p>
+		<h1>Worlds made <em>visible.</em></h1>
+		<p class="inner-deck">
+			A selection of works spanning landscapes, studies, and the artist’s explorations of
+			the surreal.
+		</p>
+	</section>
+
+	<section class="gallery-page-content" aria-label="Paintings and sketches">
+		@if (catalogError(); as error) {
+			<p class="gallery-source-note" role="alert">{{ error }}</p>
+		}
+		<div class="gallery-page-grid">
+			@for (work of works(); track work.src; let i = $index) {
+			<figure class="gallery-page-card">
+				<div class="gallery-page-image">
+					<button
+						class="gallery-image-button"
+						type="button"
+						[attr.aria-label]="'Enlarge ' + work.title"
+						aria-haspopup="dialog"
+						(click)="openArtwork(work)"
+					>
+						<img [ngSrc]="work.src" width="640" height="500" [alt]="work.title + ' by Hemanta Misra'" />
+						<span class="gallery-image-hint" aria-hidden="true">
+							<span>View artwork</span>
+							<span class="gallery-image-arrow">↗</span>
+						</span>
+					</button>
+				</div>
+				<figcaption>
+					<span>{{ work.title }}</span>
+					<span class="gallery-page-index">{{ i + 1 }}</span>
+				</figcaption>
+			</figure>
+			}
+		</div>
+		<p class="gallery-source-note">Selected works from the Hemanta Misra archive.</p>
+	</section>
+
+	<dialog
+		#artworkDialog
+		class="artwork-lightbox"
+		[attr.aria-labelledby]="selectedWork() ? 'lightbox-title' : null"
+		(click)="closeArtworkOnBackdrop($event)"
+		(keydown)="onArtworkKeydown($event)"
+		(close)="clearSelectedWork()"
+	>
+		@if (selectedWork(); as work) {
+			<div class="lightbox-content">
+				<button
+					class="lightbox-close"
+					type="button"
+					aria-label="Close enlarged artwork"
+					(click)="closeArtwork()"
+				>
+					<span aria-hidden="true">×</span>
+				</button>
+				<button
+					class="lightbox-nav lightbox-previous"
+					type="button"
+					aria-label="View previous painting"
+					(click)="showPreviousArtwork()"
+				>
+					<span aria-hidden="true">←</span>
+				</button>
+				<img [ngSrc]="work.src" width="1400" height="1100" [alt]="work.title + ' by Hemanta Misra, enlarged view'" />
+				<button
+					class="lightbox-nav lightbox-next"
+					type="button"
+					aria-label="View next painting"
+					(click)="showNextArtwork()"
+				>
+					<span aria-hidden="true">→</span>
+				</button>
+				<div class="lightbox-caption">
+					<div>
+						<p class="lightbox-overline">HEMANTA MISRA · PAINTINGS &amp; SKETCHES</p>
+						<h2 id="lightbox-title">{{ work.title }}</h2>
+					</div>
+					<p class="lightbox-counter">{{ artworkNumber(work) }} <span>/</span> {{ works().length.toString().padStart(2, '0') }}</p>
+				</div>
+			</div>
+		}
+	</dialog>
+</main>

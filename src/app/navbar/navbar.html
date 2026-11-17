@@ -1,0 +1,25 @@
+<header class="site-header">
+	<a class="site-brand" routerLink="/" aria-label="Hemanta Misra home">
+		<span class="brand-name">Hemanta <em>Misra</em></span>
+		<span class="brand-caption">An artist's tribute</span>
+	</a>
+
+	<button
+		class="menu-toggle"
+		type="button"
+		[attr.aria-expanded]="!isMenuCollapsed()"
+		aria-label="Toggle navigation"
+		(click)="isMenuCollapsed.update((value) => !value)"
+	>
+		<span></span>
+		<span></span>
+	</button>
+
+	<nav class="site-nav" [class.is-open]="!isMenuCollapsed()" aria-label="Main navigation">
+		<a routerLink="/" fragment="home" (click)="isMenuCollapsed.set(true)">Home</a>
+		<a routerLink="/about" (click)="isMenuCollapsed.set(true)">About</a>
+		<a routerLink="/paintings" (click)="isMenuCollapsed.set(true)">Paintings</a>
+		<a routerLink="/articles" (click)="isMenuCollapsed.set(true)">From the press</a>
+		<a routerLink="/contact" (click)="isMenuCollapsed.set(true)">Contact</a>
+	</nav>
+</header>

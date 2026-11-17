@@ -1,0 +1,76 @@
+<app-navbar></app-navbar>
+
+<main class="inner-page">
+	@if (catalogError(); as error) {
+		<p class="gallery-source-note" role="alert">{{ error }}</p>
+	}
+	<section class="inner-hero">
+		<p class="inner-eyebrow">The artist <span>—</span> 1917–2009</p>
+		<h1>A life in <em>many forms.</em></h1>
+		<p class="inner-deck">
+			From the landscapes of Assam to the imaginative language of modern Indian art.
+		</p>
+		@if (catalog(); as images) {
+			<img
+				class="inner-hero-image"
+				[ngSrc]="images.featured.about"
+				width="336"
+				height="400"
+				alt="Portrait of Hemanta Misra"
+			/>
+		}
+	</section>
+
+	<section class="biography inner-content">
+		<div class="inner-side-label">SIVASAGAR · ASSAM</div>
+		<div class="biography-copy">
+			<p class="inner-eyebrow">A brief biography</p>
+			<h2>Hemanta Misra <em>(1917–2009)</em></h2>
+			<p>
+				Hemanta Misra was born in Sivasagar, Assam, on 13 October 1917. He studied in
+				Sivasagar and Guwahati, and later attended Cotton College and St Edmund’s College
+				in Shillong. He was married to Bina Misra, a teacher and writer.
+			</p>
+			<p>
+				Primarily self-taught, he also studied art by correspondence with British artist
+				John Hassall. Drawing and sketching gave him a strong foundation as his work moved
+				from landscapes into cubist experiments and, later, a distinctive surrealism shaped
+				by mysticism and poetry.
+			</p>
+			<p>
+				In 1953 he became a member of the Calcutta Group, a collective associated with a
+				new modernist direction in Indian art. His paintings and writing helped bring
+				Assam’s artistic voice to a wider national audience.
+			</p>
+			<p>
+				Misra also wrote poetry and books in Assamese, including <em>Bharatiya
+				Chitrakala</em> and the autobiographical work <em>Dikhow Luit Aru Sagar</em>. He
+				passed away in Guwahati on 31 December 2009.
+			</p>
+			<div class="biography-years"><span>1917</span><i></i><span>2009</span></div>
+		</div>
+	</section>
+
+	@if (catalog(); as images) {
+		<section class="publication-section">
+			<div class="publication-heading">
+				<p class="inner-eyebrow">Beyond the canvas</p>
+				<h2>Artist, poet &amp; <em>author.</em></h2>
+				<p>Selected Assamese-language books by Hemanta Misra.</p>
+				
+			</div>
+			<div class="publication-grid">
+				@for (book of images.publications; track book.title) {
+					<figure class="publication-card">
+						<div class="publication-image">
+							<img [ngSrc]="book.src" width="206" height="302" [alt]="'Cover of ' + book.title" />
+						</div>
+						<figcaption>{{ book.title }}</figcaption>
+					</figure>
+				}
+				
+			</div>
+			<div><p>এয়া মোৰ অনুবাদহে। ওপৰৰ কথাখিনি বোম্বেৰ নিউজ অব ইণ্ডিয়া কাকতৰ কলা সমালোচকে ইংৰাজীত লিখিছে ১৯৭০ চনৰ জানুৱাৰীৰ আঠ তাৰিখে। জাহাঙ্গীৰ আৰ্ট গেলেৰীত আমাৰ অসমৰ শিল্পী হেমন্ত মিশ্ৰৰ একক চিত্ৰ প্ৰদৰ্শনী দেখি। যাৰে তাৰে প্ৰদৰ্শনী জাহাঙ্গীৰ আৰ্ট গেলেৰীত নহয়। বোম্বেৰ এই বিখ্যাত জাহাঙ্গীৰ আৰ্ট গেলেৰীত জানুৱাৰীৰ ৯ তাৰিখৰ পৰা ১৫ তাৰিখলৈ দিনৰ ১০ বজাৰ পৰা সন্ধিয়া ৮ বজালৈ মিশ্ৰৰ চিত্ৰ চাবলৈ অহা দেশী-বিদেশী শিল্পানুৰাগীৰ প্ৰচুৰ সমাগম হৈছিল। নহ'ব কিয়? মিশ্ৰ যে ভাৰতৰ একমাত্ৰ আৰু সবাতোকৈ আগবঢ়া স্যুৰৰিয়েলিষ্ট শিল্পী। নহ'লে নতুন দিল্লীৰ নেশ্যনেল গেলেৰী অব মডাৰ্ণ আৰ্টৰ সঞ্চালক প্ৰদোষ দাসগুপ্তই কেলৈ কৈছে : "To my mind Hemanta Misra is the only Surrealistic painter of our country who has contributed significantly in his new direction."— এৰা, মিশ্ৰ ভাৰতৰ একমাত্ৰ স্যুৰৰিয়েলিষ্ট শিল্পী। আমি জনাত পৃথিৱীৰ সবাতোকৈ প্ৰসিদ্ধ স্যুৰৰিয়েলিষ্ট শিল্পী হ'ল ছালভাদৰ ডালি। মিশ্ৰৰ সৃষ্টিসমূহেও ডালিৰ 'Mystic Message' আৰু 'abstract harmony' যেন বহন কৰে। ৰঙৰ ব্যৱহাৰত মিশ্ৰই অভিনৱভাৱে যেন এটি gradual unfolding অৰ প্ৰভাৱ পেলায়। মিশ্ৰৰ এই কেইটা গুণ আমাৰো চকুত পৰিছে।</p></div>
+		</section>
+	}
+</main>

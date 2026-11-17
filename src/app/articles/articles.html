@@ -1,0 +1,61 @@
+<app-navbar></app-navbar>
+
+<main class="inner-page">
+	@if (archiveError(); as error) {
+		<p class="gallery-source-note" role="alert">{{ error }}</p>
+	}
+	<section class="inner-hero inner-hero-compact">
+		<p class="inner-eyebrow">The journal <span>—</span> Essays &amp; reflections</p>
+		<h1>Beyond the <em>canvas.</em></h1>
+		<p class="inner-deck">
+			Articles from the local archive on Hemanta Misra’s paintings, his artistic circle,
+			and the places and ideas that shaped his work.
+		</p>
+	</section>
+
+	<section class="article-list" aria-labelledby="article-list-title">
+		<div class="article-list-heading">
+			<p class="inner-eyebrow">Read the journal</p>
+			<h2 id="article-list-title">Stories behind <em>the work.</em></h2>
+			<p>Choose an essay to open its own reading page.</p>
+		</div>
+
+		<div class="article-list-grid">
+			@for (article of articles(); track article.slug) {
+			<a
+				class="article-list-card"
+				[class.article-list-featured]="article.slug === 'kandali'"
+				[routerLink]="['/articles', article.slug]"
+			>
+				<div class="article-list-image">
+					<img [ngSrc]="article.image" width="600" height="450" [alt]="article.imageAlt" />
+				</div>
+				<div class="article-list-copy">
+					<p class="article-archive-category">{{ article.credit }}</p>
+					<h2>{{ article.title }}</h2>
+					<p class="article-list-byline">By {{ article.author }}</p>
+					<p>{{ article.excerpt }}</p>
+					<span class="article-read-link">Read full article <span aria-hidden="true">↗</span></span>
+				</div>
+			</a>
+			}
+		</div>
+		<p class="article-content-note">
+			Article text is presented from the DOCX files in the local archive.
+		</p>
+	</section>
+
+	<section class="press-quotes">
+		<p class="inner-eyebrow">From the press archive</p>
+		<div class="press-quote-grid">
+			<blockquote>
+				<p>The 1969 review of <em>Echo of a Song</em> drew attention to its poetic mood and nuanced use of colour.</p>
+				<footer><cite>Echo of a Song</cite><span>The Statesman · 1969</span></footer>
+			</blockquote>
+			<blockquote>
+				<p>A 1952 review of <em>The Harvest</em> noted the painting’s vitality, craft, and distinctive surface.</p>
+				<footer><cite>The Harvest</cite><span>The Statesman · 1952</span></footer>
+			</blockquote>
+		</div>
+	</section>
+</main>
