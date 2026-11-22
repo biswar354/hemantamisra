@@ -1,4 +1,5 @@
-import { Injectable } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { inject, Injectable } from '@angular/core';
 
 export interface ArchiveArticle {
   slug: string;
@@ -14,11 +15,14 @@ export interface ArchiveArticle {
 
 @Injectable({ providedIn: 'root' })
 export class ArticleArchiveService {
+  private readonly document = inject(DOCUMENT);
   private articlesRequest?: Promise<ArchiveArticle[]>;
 
   load(): Promise<ArchiveArticle[]> {
     if (!this.articlesRequest) {
-      this.articlesRequest = fetch('/assets/articles.json')
+      this.articlesRequest = fetch(new URL('assets/articles.json', this.document.baseURI), {
+        cache: 'no-cache',
+      })
         .then((response) => {
           if (!response.ok) {
             throw new Error(`Article archive request failed: ${response.status}`);

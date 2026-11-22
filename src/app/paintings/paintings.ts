@@ -12,6 +12,7 @@ export class Paintings implements OnInit {
   protected readonly works = signal<PaintingImage[]>([]);
   protected readonly catalogError = signal<string | null>(null);
   protected readonly selectedWork = signal<PaintingImage | null>(null);
+  protected readonly activeIndex = signal(0);
   private readonly artworkDialog =
     viewChild.required<ElementRef<HTMLDialogElement>>('artworkDialog');
 
@@ -82,5 +83,29 @@ export class Paintings implements OnInit {
 
   protected artworkNumber(work: PaintingImage): string {
     return String(this.works().indexOf(work) + 1).padStart(2, '0');
+  }
+
+  protected goToPainting(index: number): void {
+    const works = this.works();
+    if (!works.length) return;
+    this.activeIndex.set((index + works.length) % works.length);
+  }
+
+  protected showPreviousPainting(): void {
+    this.goToPainting(this.activeIndex() - 1);
+  }
+
+  protected showNextPainting(): void {
+    this.goToPainting(this.activeIndex() + 1);
+  }
+
+  protected onCarouselKeydown(event: KeyboardEvent): void {
+    if (event.key === 'ArrowLeft') {
+      event.preventDefault();
+      this.showPreviousPainting();
+    } else if (event.key === 'ArrowRight') {
+      event.preventDefault();
+      this.showNextPainting();
+    }
   }
 }

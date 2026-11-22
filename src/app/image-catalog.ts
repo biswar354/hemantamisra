@@ -1,4 +1,5 @@
-import { Injectable } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { inject, Injectable } from '@angular/core';
 
 export interface PaintingImage {
   title: string;
@@ -27,11 +28,14 @@ export interface ImageCatalog {
 
 @Injectable({ providedIn: 'root' })
 export class ImageCatalogService {
+  private readonly document = inject(DOCUMENT);
   private catalogRequest?: Promise<ImageCatalog>;
 
   load(): Promise<ImageCatalog> {
     if (!this.catalogRequest) {
-      this.catalogRequest = fetch('/assets/image-catalog.json')
+      this.catalogRequest = fetch(new URL('./assets/image-catalog.json', this.document.baseURI), {
+        cache: 'no-cache',
+      })
         .then((response) => {
           if (!response.ok) {
             throw new Error(`Image catalog request failed: ${response.status}`);

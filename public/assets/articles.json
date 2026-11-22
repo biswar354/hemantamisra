@@ -4,7 +4,7 @@
         "title":  "Tribute to Hemanta Misra: the “Calcutta Group” Painter",
         "author":  "Maushumi Kandali",
         "credit":  "Art News \u0026 Views",
-        "image":  "/assets/images/calgrp-01.gif",
+        "image":  "./assets/images/calgrp-01.gif",
         "imageAlt":  "Archival photograph of the Calcutta Group",
         "excerpt":  "While we look back to the last two decades in this issue of the Art news \u0026 views to take stock of the things that had “happened” in the Indian art world – I take a quantum leap back to the forties. Those who were witness to the pulsating art scenario in Kol...",
         "paragraphs":  [
@@ -20,7 +20,7 @@
         "title":  "The Calcutta Group",
         "author":  "Sanjoy Mallik",
         "credit":  "Art \u0026 Deal · 2004",
-        "image":  "/assets/images/calgrp-02.gif",
+        "image":  "./assets/images/calgrp-02.gif",
         "imageAlt":  "Archival photograph associated with the Calcutta Group",
         "excerpt":  "“Man is supreme, there is none above him” — this was the guiding slogan when the Calcutta Group was formed in 1943.  Those were dark days for Bengal. Famine and pestilence were then stalking the land. The barbarity and heartlessness all around moved us, a f...",
         "paragraphs":  [
@@ -40,7 +40,7 @@
         "title":  "Echo of a Song",
         "author":  "Debashish Bezbaruah",
         "credit":  "The Assam Tribune · 2009",
-        "image":  "/assets/painting/Echo of a Song.jpg",
+        "image":  "./assets/painting/Echo of a Song.jpg",
         "imageAlt":  "Echo of a Song by Hemanta Misra",
         "excerpt":  "The humble waves of Dikhow merged with the Brahmaputra, and together they flowed into the sea, meandering through rugged terrains after a long, arduous journey. That was how HemantaMisra’s life too moved on, from his childhood at Sivasagar to the days of vi...",
         "paragraphs":  [
@@ -59,7 +59,7 @@
         "title":  "Hemanta Misra: The Surrealist Artist",
         "author":  "Pradosh Das Gupta",
         "credit":  "Roop-Lekha · 1971",
-        "image":  "/assets/images/calgrp-03.gif",
+        "image":  "./assets/images/calgrp-03.gif",
         "imageAlt":  "Archival image associated with Hemanta Misra",
         "excerpt":  "“…that evening is still fresh in my memory when I first met  HemantaMisra, the young artists from Assam, during one of our Calcutta Group shows about two decades ago. Hemanta with his unkempt hair, baggy trousers and thin-built body appeared to me more a re...",
         "paragraphs":  [
@@ -68,5 +68,53 @@
                            "The revolutionary spirit of the Dada movement led by Dali in breaking up the existing political, social and artistic forms found its repose ultimately in surrealism in a constructive way justifying the unreasoned, irrational absurdities  in images of form and colour infused with a sense of poetry. Similarly, the early revolutionary urge which was the starting point of Misra’s artistic career and noticeable in his drawings was subdued and energized through a more sympathetic constructive policy and found its ultimate repose in his paintings of surrealistic nature. Here Misra’s identification has been sincere and complete.”"
                        ],
         "source":  "Extracted from HemantaMisra:The Surrealist Painter by Pradosh Das Gupta  in  M.S.Randhawa and Krishna Chaitanya (ed) ROOP-LEKHA,Vol  XL, Nos 1 \u0026 2, AIFACS, New Delhi.1971"
+    },
+    {
+        "slug":  "bhupen-hazarika",
+        "title":  "শিল্পী হেমন্ত মিশ্ৰৰ কথা",
+        "author":  "ড° ভূপেন হাজৰিকা",
+        "credit":  "",
+        "image":  "./assets/painting/Echo of a Song.jpg",
+        "imageAlt":  "Echo of a Song by Hemanta Misra",
+        "excerpt":  "মোৰ বুকু ফুলি উঠিছে আমাৰ 'ছালভাদৰ ডালি' শিল্পী হেমন্ত মিশ্ৰৰ কথা লিখিবলৈ পাই— ---",
+        "paragraphs":  [
+            "মোৰ বুকু ফুলি উঠিছে আমাৰ 'ছালভাদৰ ডালি'",
+"শিল্পী হেমন্ত মিশ্ৰৰ কথা",
+"লিখিবলৈ পাই—",
+"ভাৰতৰ একমাত্ৰ স্যুৰৰিয়েলিষ্টৰ সাফল্য",
+"“বিশাল নীলা আকাশ—",
+"অভিনৱ টিলিঙা এটি দোদুল্যমান—",
+"মাংসবিহীন অস্থিচৰ্মসাৰ হাতেৰে",
+"কোনোবাই ইংগিত দিছে",
+"কম বয়সীয়াৰ বাবে ই যেন এটি ফ্ৰয়ডিয়ান",
+"নিশাৰ সপোনৰ পৰা সাৰ পোৱাৰ অনুভূতি?",
+"পূৰঠ মস্তিষ্কৰ বাবে ই এক মহান অভিজ্ঞতা",
+"তেওঁ এজন বিপ্লৱী—",
+"আকৃতি অংকন নকৰে, কৰে আকাৰ সৃষ্টি",
+"জীৱনক তেওঁ নকল নকৰে",
+"জীৱনৰ সমপৰ্যায়ৰ সত্যক বিচাৰি ফুৰে-",
+"হেমন্ত মিশ্ৰ এজন বিপ্লৱী শিল্পী-",
+"ভাৰতৰ চিত্ৰকলাৰ মানচিত্ৰত অসমক ডাঙৰ",
+"আসন দিব পাৰিছে অকল হেমন্ত মিশ্ৰইহে–”",
+"এয়া মোৰ অনুবাদহে। ওপৰৰ কথাখিনি বোম্বেৰ নিউজ অব ইণ্ডিয়া কাকতৰ কলা সমালোচকে ইংৰাজীত লিখিছে ১৯৭০ চনৰ জানুৱাৰীৰ আঠ তাৰিখে। জাহাঙ্গীৰ আৰ্ট গেলেৰীত আমাৰ অসমৰ শিল্পী হেমন্ত মিশ্ৰৰ একক চিত্ৰ প্ৰদৰ্শনী দেখি। যাৰে তাৰে প্ৰদৰ্শনী জাহাঙ্গীৰ আৰ্ট গেলেৰীত নহয়। বোম্বেৰ এই বিখ্যাত জাহাঙ্গীৰ আৰ্ট গেলেৰীত জানুৱাৰীৰ ৯ তাৰিখৰ পৰা ১৫ তাৰিখলৈ দিনৰ ১০ বজাৰ পৰা সন্ধিয়া ৮ বজালৈ মিশ্ৰৰ চিত্ৰ চাবলৈ অহা দেশী-বিদেশী শিল্পানুৰাগীৰ প্ৰচুৰ সমাগম হৈছিল। নহ'ব কিয়? মিশ্ৰ যে ভাৰতৰ একমাত্ৰ আৰু সবাতোকৈ আগবঢ়া স্যুৰৰিয়েলিষ্ট শিল্পী। নহ'লে নতুন দিল্লীৰ নেশ্যনেল গেলেৰী অব মডাৰ্ণ আৰ্টৰ সঞ্চালক প্ৰদোষ দাসগুপ্তই কেলৈ কৈছে : 'To my mind Hemanta Misra is the only Surrealistic painter of our country who has contributed significantly in his new direction.' – এৰা, মিশ্ৰ ভাৰতৰ একমাত্ৰ স্যুৰৰিয়েলিষ্ট শিল্পী। আমি জনাত পৃথিৱীৰ সবাতোকৈ প্ৰসিদ্ধ স্যুৰৰিয়েলিষ্ট শিল্পী হ'ল ছালভাদৰ ডালি। মিশ্ৰৰ সৃষ্টিসমূহেও ডালিৰ 'Mystic Message' আৰু 'abstract harmony' যেন বহন কৰে। ৰঙৰ ব্যৱহাৰত মিশ্ৰই অভিনৱভাৱে যেন এটি gradual unfolding অৰ প্ৰভাৱ পেলায়। মিশ্ৰৰ এই কেইটা গুণ আমাৰো চকুত পৰিছে।",
+"১৯১৭ চনত অসমত জনমি, কটন কলেজ, ছেইণ্ট এডমাণ্ডছ কলেজত পঢ়ি, ১৯৪৩ চনত সৈন্য বিভাগত ষ্টাফ শিল্পী হৈ (জন হাচাল R.I. Commission পাই) অসম চৰকাৰৰ প্ৰচাৰ বিভাগত থাকি, গগঁই টাহিটিক তুলিৰে অমৰ কৰাৰ দৰে, মিশ্ৰই খাছী পাহাৰক ৰঙেৰে পটত আৱদ্ধ কৰি আজি তেওঁ কলিকতাৰ Queen of the Missions Convent অত শিক্ষা দিয়ে আৰ্টৰ। ই এজন অসমীয়া শিল্পীৰ ৪৬ বছৰীয়া সংগ্ৰামৰ পৰিচয়। সংগ্ৰাম আৰু নীৰৱ সাধনা কৰি ১৯৫২, ৫৯, ৬৭ত কলিকতাত (বিখ্যাত কেলকাটা গ্ৰুপৰ সভ্য হৈ), ট্ৰিয়েনালে অব্ কনটেমপৰেৰীৰ ৱৰ্ল্ড আৰ্ট-অত ১৯৬৮ চনত আৰু ৰাছিয়াত ইউনিয়ন অব্ পেইণ্টাৰ্ছ সংগঠনত থকা বিভিন্ন প্ৰদৰ্শনীৰ যোগেদি হেমন্ত মিশ্ৰৰ সৃজনী প্ৰতিভাই সহস্ৰ সহস্ৰ কলাপ্ৰেমীক মুহিছে। মিশ্ৰই নিজেই নিজক গঢ়িছে। আমাৰ কৈশোৰত শ্বিলঙত আমি মিশ্ৰক দেখা মনত আছে। হাতত এখন সৰু স্কেচ বুক, এডাল পেঞ্চিল আৰু প্ৰকৃতিৰ জগতখনক, মানুহৰ অনুভূতিৰ জগতখনক জনা আৰু ৰেখাৰে চিৰযুগমীয়া কৰাৰ এক দুৰ্বাৰ তৃষ্ণা। সেয়ে আছিল হেমন্ত মিশ্ৰ। সম্ভাৱনাপূৰ্ণ হেমন্ত। সেই সম্ভাৱনাই আজি বাস্তৱত পৰিপূৰ্ণতা লাভ কৰাটো এটা আনন্দৰ বাতৰি। তেওঁৰ উন্নতি অসমৰ উন্নতি বুলি আমি সান্ত্বনা লভিয়েই ক্ষান্ত থাকিলে ভুল হ'ব। হেমন্ত মিশ্ৰ অসমৰ অসমীয়া শিল্পী।",
+"হেমন্ত মিশ্ৰৰ বাবে অসমে কি কৰিছে? মিশ্ৰই হয়তো অসমৰ পৰা একো নিবিচাৰে। অসমৰ কৰ্তব্যবোধ ক'লৈ গ'ল? অসমৰ বাহিৰত সংগ্ৰাম কৰি থকা অসমীয়া শিল্পীসকলৰ প্ৰতি অসমৰ ৰজাৰ-ৰাইজৰ কৰ্তব্য নাই জানো? যাওক সেইবোৰ কথা।",
+"হেমন্ত মিশ্ৰৰ সত্তাৰ অণু-পৰমাণুত অসমৰ সৌন্দৰ্য সোমাই আছে। নহ'লে বোম্বেৰ 'ছানডে ষ্টেণ্ডাৰ্ডে' লিখেনে, “এই কবিতাময় প্ৰতিভা, মিশ্ৰৰ শিল্পী জীৱনলৈ আনি দিছে, নিশ্চয়, অসমৰ সুন্দৰ পাহাৰ আৰু উপত্যকাৰ ৰহণে—” মিশ্ৰৰ আৰু এটি বিশেষত্ব হ'ল তেওঁৰ আঢ়ৈ কুৰি তিনি বছৰীয়া জীৱনটোৱে স্যুৰৰিয়েলিজমৰ ৰাজ্যত প্ৰৱেশ কৰিছেহি 'কিউবিজম'ৰ মাজেদি। এৰা, ৰিয়েলিজমৰ পাছত পিকাছোৰ বাটেদি 'ছালভাদৰ ডালি'ৰ বাট।",
+"“আপোনাৰ পৰা বোম্বেৰ শিক্ষাৰ্থীসকলে বহুতো শিকিবলগীয়া আছে।” বুলি ক'লে বোম্বেৰ জে জে কলেজ অব্ আৰ্টৰ প্ৰাক্তন ডীন, শিল্পী শ্ৰীআড়ুৰকাৰে।",
+"ভিজিটৰ বুকখন মেলিলে মিশ্ৰৰ ছবিৰ প্ৰশংসা পাব কত ধৰণৰ। এগৰাকী মহিলা শিল্পীয়ে লিখিছে 'Eye ful. Enjoyed it so much'- বিখ্যাত শিল্পী আলমেকাৰে একে আষাৰে কৈছে- 'Dreamland'। মস্কোৰ ষ্টেট মিউজিয়াম অব অৰিয়েণ্টেল আৰ্টৰ শ্ৰীমতী কাৰপোভাই লিখিছে- “সুন্দৰ চিত্ৰ- অদূৰ ভৱিষ্যতেও যেন মস্কোত আপোনাৰ ছবি আকৌ দেখা পাওঁ।”",
+"ভাৰতৰ প্ৰখ্যাত ভাস্কৰ টি এইচ কামাথে লিখিলে- 'A quaint lyricism of melancholy blue.'।",
+"হায়দৰাবাদৰ শালাৰ ই মিউজিয়ামৰ সঞ্চালকে লিখিছে- 'have a very significant existence on canvas.'।",
+"বোম্বে হাইকোৰ্টৰ বিখ্যাত আইনজীৱী, কলাপ্ৰেমী শ্ৰীমতী কোলৱাবালাই লিখিলে- 'Perfect blend of the Modern Art with the ancient and eternal thought and feelings.'",
+"জনৈক শিল্পীয়ে লিখিলে- “মিশ্ৰৰ ছবি এক আধ্যাত্মিকতাৰ পৰিচয়।” আন এজনে ক'লে “সপোনপুৰীৰ পৰা পোনে পোনে কেনভাছলৈ।”",
+"ফিল্ম জগতৰ জয়ৰাজে লিখিছে- “আজি মই দেশত এগৰাকী স্যুৰৰিয়েলিষ্ট শিল্পী পালোঁ। মই এই গেলেৰীত মিশ্ৰৰ ছবি চাই অতি আনন্দিত।”",
+"তাৰ পাছত বোম্বে মহানগৰীৰ বুকুত মহাৰাষ্ট্ৰ চৰকাৰৰ পৃষ্ঠপোষকতাত গঢ়ি উঠা কলা নগৰলৈ প্ৰখ্যাত শিল্পী ভি আৰ আম্বেদকাৰে মিশ্ৰক আমন্ত্ৰণ জনালে। জে জে কলেজে আমন্ত্ৰণ জনালে। মিশ্ৰৰ সৈতে জে জে কলেজৰ এতিয়াৰ ডীন শ্ৰীপালিচকাৰ আৰু অধ্যাপকসকলে আৰ্টৰ সম্বন্ধে দীঘলীয়া আলচ কৰি ভৱিষ্যতে চিত্ৰ-প্ৰদৰ্শনীত মিশ্ৰৰ ছবি বিচাৰিলে। Bombay Art Society- যে ফেব্ৰুৱাৰী মাহত হোৱা বাৰ্ষিক প্ৰদৰ্শনীত মিশ্ৰৰ ছবি বিচাৰিলে। আন্তৰ্জাতিক শিল্পী প্ৰদৰ্শনীত প্ৰদৰ্শিত Extinguished flame নামৰ মিশ্ৰৰ উচ্চপ্ৰশংসিত তৈলচিত্ৰখনৰ উপৰিও মিশ্ৰৰ কেইখনমান অন্যান্য কেনভাছ হ'ল : অনুপস্থিত আকাশৰ এক মৰীচিকা - সেউজ সোণলৈ ৰূপান্তৰ -ধুমুহাতো জীৱনৰ বস্ত্ৰ বেছোঁ- এই পাহৰা গীত-এটি ৰঙেৰে লিখা কবিতা - গলি যোৱা ঈশ্বৰক বিচাৰি-আৰু আদিম বতাহ। মন কৰিব, শিল্পী মিশ্ৰৰ চিত্ৰ সৃষ্টিৰ নামকৰণতেই এই মিষ্টিক, আধ্যাত্মিক অৰ্থ সোমাই আছে। মিশ্ৰ চিন্তাশীল কলাপ্ৰেমীৰহে শিল্পী।",
+"মিশ্ৰ অসমৰ সুপুত্ৰ। ভাৰতৰ সুপুত্ৰ। তেওঁ সংগ্ৰাম কৰে নীৰৱভাৱে। সাফল্য গ্ৰহণ কৰে গম্ভীৰভাৱে। সাধনা কৰে জীৱনৰ সকলো স্বাৰ্থ ত্যাগ কৰি। মিশ্ৰই পাওক আৰু সন্মান, মিশ্ৰই কৰক আৰু অভিনৱ সৃষ্টি, মিশ্ৰই পাওক এটি সুস্থ দীৰ্ঘ আয়ুস। এয়ে আমাৰ অন্তৰৰ কামনা। হেমন্তৰ জীৱনত বসন্ত চিৰবিৰাজমান হওঁক।",
+"--- AN ARTIST MUST LIVE WITH HIS TIME AND ITS CHANGES---",
+"আজি প্ৰায় একুৰি বছৰ আগৰ কথা। কোনো এজন বিখ্যাত নেতাই শ্বিলঙত বক্তৃতা দিছে। বহুতো মানুহ। বিষ্ণু প্ৰসাদ ৰাভা আৰু ময়ো শুনিছোঁ সেই বক্তৃতা। এজন চফল ডেকাই ভিৰৰ মাজত থাকিও সৰু বহী এখনত আপোন মনে সেই নেতাগৰাকীৰ স্কেচ্ কৰিছে। ছবি অঁকাটোৱেই যেন তেওঁৰ জীৱনৰ পণ-অনন্ত সাধনা! ৰাভাদেৱে স্কেচ্ চাই ক'লে 'অপূৰ্ব হাত এওঁৰ'। চালোঁ সঁচাকৈয়ে সুন্দৰ। নেতাগৰাকীক তেওঁৰ প্ৰতিকৃতি দেখুওৱাত শিল্পীজনক হাত বুলাই ক'লে 'সুন্দৰ'-এটি অটোগ্ৰাফ দিলে। সেই শিল্পীৰ স্কেচ্ বুকখন আমি চোৱাত দেখিলোঁ- 'শিলঙীয়া' জীৱনৰ প্ৰতিটো মুহূৰ্তৰ ৰূপ যেন পাতে পাতে ধৰা পৰিছে। সকলো ছবি মুহূৰ্তত আঁকা। সেই ডেকা শিল্পীজনেই আমাৰ অসমৰ হেমন্ত মিশ্ৰ।",
+"কলিকতাৰ পাৰ্ক চাৰ্কাছৰ ওচৰৰ বাসস্থানত আকৌ দেখা কৰিলোঁ সেই শিল্পীগৰাকীক। তেওঁ এতিয়া ভাৰতৰ হেমন্ত মিশ্ৰ। কলিকতাৰ বিখ্যাত কনভেন্ট অব্ লেডী কুইন অব ডি মিছনছত আৰ্টৰ অধ্যাপক। ভাৰতৰ বিখ্যাত 'কলিকতা গ্ৰুপ'ৰ সভ্য। কলিকতাৰ শিল্পীচামে হেমন্ত মিশ্ৰক লৈ আজি গৌৰৱ অনুভৱ কৰে :",
+"Mr. Misra's pictures are alive and vital. He has a keen eye for subject allied to a vigorous and in his more recent work, experimental technique which may develop into a powerful mode of expression. (ষ্টেট্ছমেন)। মিশ্ৰৰ চিত্ৰ সৃষ্টিত খাছী জীৱনৰ দৈনন্দিন ৰূপ অপূৰ্বভাৱে ধৰা পৰিছে। মিশ্ৰই নিজেও শ্বিলঙত জীৱনৰ সৈতে যুঁজিব লগা হৈছিল বাবেই বোধকৰোঁ, শ্বিলঙৰ অংকন পদ্ধতিতো অতি Boldness দেখা যায়। বিখ্যাত ভেন গফৰ পদ্ধতিৰ প্ৰভাৱ মিশ্ৰৰ ছবিত পৰিছে যদিও, নিজস্ব বৈশিষ্ট্য সম্পূৰ্ণৰূপে ৰাখিছে। শ্বিলঙৰ ধাননি পথাৰত কৰ্মৰত খাছী কৃষকৰ ছবি দেখি ষ্টেট্ছমেনে কৈছে - 'He is craftsman, as his preparation of a plywood with gelatin and sand for the rough surface of 'Harvest' proves a picture which brings Van Gogh's France to the field of Shillong most succesfully'---"
+
+],
+        "source":  "DebashishBezbaruah (The Assam Tribune, February 21 2009),"
     }
 ]
